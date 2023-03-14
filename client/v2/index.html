@@ -21,7 +21,17 @@
       </div>
       <div id="filters">
         <span>By reasonable price</span>
+        <label for="reasonable-select">:</label>
+          <select name="reasonable" id="reasonable-select"> 
+            <option value="no-price">No</option>
+            <option value="yes-price">Yes</option>           
+          </select>
         <span>By recently released</span>
+        <label for="recent-select">:</label>
+          <select name="recent" id="recent-select"> 
+            <option value="no-released">No</option>
+            <option value="yes-released">Yes</option>
+          </select>
         <div id="brand">
           <label for="brand-select">By brands:</label>
           <select name="brand" id="brand-select"> </select>
@@ -36,39 +46,48 @@
           <option value="date-desc">Anciently released</option>
         </select>
       </div>
+      <div id="favorites">
+        <button onclick="displayfav()">Display Favourite Items</button>
+      </div>
     </section>
     <section id="indicators">
       <h2>Indicators</h2>
       <div>
-        <span>Number of products</span>
-        <span id="nbProducts">0</span>
+        <span>Number of products : </span>
+        <span id="nbProducts"></span>
       </div>
       <div>
-        <span>Number of brands</span>
-        <span id="nbBrands">0</span>
+        <span>Number of brands : </span>
+        <span id="nbBrands"></span>
       </div>
       <div>
-        <span>Number of new products</span>
-        <span>0</span>
+        <span>Number of new products : </span>
+        <span id="nbNewProducts"></span>
+        
       </div>
       <div>
-        <span>p50 price value</span>
-        <span>0</span>
+        <span>p50 price value : </span>
+        <span id="p50Products"></span>
+        
       </div>
       <div>
-        <span>p90 price value</span>
-        <span>0</span>
+        <span>p90 price value : </span>
+        <span id="p90Products"></span>
+        
       </div>
       <div>
-        <span>p95 price value</span>
-        <span>0</span>
+        <span>p95 price value : </span>
+        <span id="p95Products"></span>
+       
       </div>
       <div>
-        <span>Last released date</span>
-        <span>2020-01-01</span>
+        <span>Last released date : </span>
+        <span id="last-released"></span>
       </div>
     </section>
     <section id="products"></section>
-    <script type="text/javascript" charset="UTF-8" src="portfolio.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="portfolio.js">
+      window.open(products);
+    </script>
   </body>
 </html>
