@@ -10,10 +10,10 @@ const fs = require('fs');
 const parse = data => {
     const $ = cheerio.load(data);
 
-    return $('.product-list .product-list__block')
+    return $('.product-list .product-list__block*')
         .map((i, element) => {
             const name = $(element)
-                .find('.product-miniature__title')
+                .find('text-reset')
                 .text()
                 .trim()
                 .replace(/\s/g, ' ');

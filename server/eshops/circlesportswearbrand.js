@@ -10,7 +10,7 @@ const fs = require('fs')
 const parse = data => {
   const $ = cheerio.load(data);
 
-  return $('.produc-grid-container .grid__item')
+  return $('.produc-grid-container .grid__item*')
     .map((i, element) => {
       const name = $(element)
         .find('.card__heading h5')
