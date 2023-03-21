@@ -1,1 +1,63 @@
-[]
+[
+  {
+    "brand": "Circle Sportswear",
+    "name_product": "Crop-top sport Smooth Operator",
+    "characteristics": "Doux - LégerDoux - Léger",
+    "color": [
+      "Burgundy Red",
+      "Sand",
+      "Onyx Black",
+      "Moss",
+      "Minty Fresh",
+      "Lilac"
+    ],
+    "price": 59
+  },
+  {
+    "brand": "Circle Sportswear",
+    "name_product": "T-shirt de Sport Iconic POP",
+    "characteristics": "Léger - RespirantLéger - Respirant",
+    "color": [
+      "Navy",
+      "Minty Fresh"
+    ],
+    "price": 65
+  },
+  {
+    "brand": "Circle Sportswear",
+    "name_product": "T-shirt Jim",
+    "characteristics": "Coupe AmpleCoupe Ample",
+    "color": [
+      "Purple Rain"
+    ],
+    "price": 69
+  },
+  {
+    "brand": "Circle Sportswear",
+    "name_product": "T-shirt de Sport Get Ready Quick Dry",
+    "characteristics": "Technique - ConfortableTechnique - Confortable",
+    "color": [
+      "Granite Grey"
+    ],
+    "price": 59
+  },
+  {
+    "brand": "Circle Sportswear",
+    "name_product": "T-shirt Iconic Social",
+    "characteristics": "Léger - RespirantLéger - Respirant",
+    "color": [
+      "Noire"
+    ],
+    "price": 50
+  },
+  {
+    "brand": "Circle Sportswear",
+    "name_product": "T-shirt de Sport Get Ready",
+    "characteristics": "Léger - RespirantLéger - Respirant",
+    "color": [
+      "Moss",
+      "Onyx Black"
+    ],
+    "price": 59
+  }
+]

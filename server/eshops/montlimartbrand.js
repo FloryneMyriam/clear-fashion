@@ -8,74 +8,35 @@ const fs = require('fs');
  * @return {Array} products
  */
 
-/*
 const parse = data => {
-    const $ = cheerio.load(data);
+  const $ = cheerio.load(data);
 
-    return $('.product-miniature .product-list__block*')
-        .map((i, element) => {
-            const name = $(element)
-                .find('product-miniature__title')
-                .text()
-                .trim()
-                .replace(/\s/g, ' ');
-            const color = $(element)
-                .find('product-miniature__color')
-                .text()
-                .trim()
-                .replace(/\s/g, ' ');
-            const price = parseFloat(
-                $(element)
-                .find('.product-miniature__pricing')
-                .text()
-        );
+  return $('.products-list .products-list__block*')
+    .map((i, element) => {
+      const name = $(element)
+        .find('.text-reset')
+        .text()
+        .trim()
+        .replace(/\s/g, ' ');
 
-            return {name, color, price};
-        })
-        .get();
-};
-*/
-
-const scrapeProducts = async (url) => {
-    const products = [];
-  
-    try {
-      const response = await fetch(url);
-  
-      if (response.ok) {
-        const htmlText = await response.text();
-        const $ = cheerio.load(htmlText);
-  
-        $('.product-miniature').each((index, element) => {
-          const brand = "Montlimart";
-          const name = $(element)
-            .find('.product-miniature__title')
-            .text()
-            .trim()
-            .toLowerCase()
-            .replace(/^\w/, capitalize);    //capitalize?
-          const price = parseFloat($(element)
-            .find('.product-miniature__pricing')
-            .text()
-            .replace(',', '.'));
-          const color = $(element)
-            .find('.product-miniature__color')
-            .text()
-            .trim()
-            .toLowerCase()
-            .replace(/^\w/, capitalize);
-  
-          products.push({ brand, name, price, color });
-        });
-      } else {
-        console.error(`Error fetching products. Status code: ${response.status}`);
+      const color = $(element)
+        .find('.product-miniature__color')
+        .text()
+        .trim()
+        .replace(/\s/g, ' ');
+      const price = parseFloat(
+        $(element)
+          .find('.product-miniature__pricing')
+          .text()
+        
+      );
+      if(color != ''){
+        return {name, color, price};
       }
-    } catch (error) {
-      console.error(`Error scraping products: ${error}`);
-    }
-  
-    return products;
-  };
+    })
+    .get();
+};
+
 
 /**
  * Scrape all the products for a given url page
@@ -90,7 +51,7 @@ module.exports.scrape = async url => {
             const body = await response.text();
             const products = parse(body);
             //json file
-            jsonString = JSON.stringify(products);
+            jsonString = JSON.stringify(products, null, 2);
             fs.writeFileSync('montlimard_products.json', jsonString)
             return products;
         }

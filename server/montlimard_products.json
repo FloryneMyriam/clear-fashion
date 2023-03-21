@@ -1,1 +1,127 @@
-[]
+[
+  {
+    "name": "T-SHIRT RESPECT",
+    "color": "BLEU MARINE",
+    "price": 75
+  },
+  {
+    "name": "T-SHIRT IDEAL",
+    "color": "GRIS CLAIR",
+    "price": 55
+  },
+  {
+    "name": "T-SHIRT ESSAIM",
+    "color": "VERT",
+    "price": 55
+  },
+  {
+    "name": "T-SHIRT JOUEUR",
+    "color": "BLEU CLAIR",
+    "price": 70
+  },
+  {
+    "name": "T-SHIRT LIGUE",
+    "color": "BLEU CLAIR",
+    "price": 70
+  },
+  {
+    "name": "T-SHIRT RESPECT",
+    "color": "GRIS CLAIR",
+    "price": 75
+  },
+  {
+    "name": "T-SHIRT ICONE",
+    "color": "MARRON",
+    "price": 55
+  },
+  {
+    "name": "T-SHIRT LIGUE",
+    "color": "KAKI",
+    "price": 70
+  },
+  {
+    "name": "T-SHIRT RESPECT",
+    "color": "VERT",
+    "price": 75
+  },
+  {
+    "name": "T-SHIRT INITIAL",
+    "color": "BEIGE",
+    "price": 55
+  },
+  {
+    "name": "T-SHIRT RESPECT",
+    "color": "NOIR",
+    "price": 75
+  },
+  {
+    "name": "T-SHIRT ESSAIM",
+    "color": "BLANC",
+    "price": 55
+  },
+  {
+    "name": "T-SHIRT SYMBOLE",
+    "color": "KAKI CLAIR",
+    "price": 70
+  },
+  {
+    "name": "T-SHIRT CITADIN",
+    "color": "BLANC",
+    "price": 55
+  },
+  {
+    "name": "T-SHIRT ESSAIM",
+    "color": "ROUGE",
+    "price": 55
+  },
+  {
+    "name": "T-SHIRT SYMBOLE",
+    "color": "BLEU MARINE",
+    "price": 70
+  },
+  {
+    "name": "T-SHIRT RESPECT",
+    "color": "TERRACOTTA",
+    "price": 75
+  },
+  {
+    "name": "T-SHIRT ESSAIM",
+    "color": "ANTHRACITE",
+    "price": 55
+  },
+  {
+    "name": "T-SHIRT IDEAL",
+    "color": "ROUGE",
+    "price": 55
+  },
+  {
+    "name": "T-SHIRT ESSAIM",
+    "color": "GRIS CHINE",
+    "price": 55
+  },
+  {
+    "name": "T-SHIRT BLASON",
+    "color": "GRIS CHINE",
+    "price": 65
+  },
+  {
+    "name": "T-SHIRT IDEAL",
+    "color": "BLEU MARINE",
+    "price": 55
+  },
+  {
+    "name": "T-SHIRT ESSAIM",
+    "color": "BLEU MARINE",
+    "price": 55
+  },
+  {
+    "name": "T-SHIRT INITIAL",
+    "color": "VERT",
+    "price": 55
+  },
+  {
+    "name": "T-SHIRT BLASON",
+    "color": "BLEU MARINE",
+    "price": 65
+  }
+]
