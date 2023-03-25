@@ -13,6 +13,9 @@ const parse = data => {
 
   return $('.products-list .products-list__block*')
     .map((i, element) => {
+
+      const brand = 'Montlimart';
+
       const name = $(element)
         .find('.text-reset')
         .text()
@@ -24,14 +27,15 @@ const parse = data => {
         .text()
         .trim()
         .replace(/\s/g, ' ');
+
       const price = parseFloat(
         $(element)
-          .find('.product-miniature__pricing')
+          .find('.price')
           .text()
         
       );
       if(color != ''){
-        return {name, color, price};
+        return {brand, name, color, price};
       }
     })
     .get();

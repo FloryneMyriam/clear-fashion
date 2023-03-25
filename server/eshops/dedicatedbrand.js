@@ -13,6 +13,9 @@ const parse = data => {
 
   return $('.productList-container .productList')
     .map((i, element) => {
+
+      const brand = "DedicatedBrand";
+
       const name = $(element)
         .find('.productList-title')
         .text()
@@ -24,7 +27,7 @@ const parse = data => {
           .text()
       );
 
-      return {name, price};
+      return {brand, name, price};
     })
     .get();
 };
