@@ -46,7 +46,7 @@ module.exports.scrape = async url => {
       const products = parse(body);
       
       //json file
-      jsonString = JSON.stringify(products);
+      jsonString = JSON.stringify(products, null, 2);
       fs.writeFileSync('dedicated_products.json', jsonString)
       return products;
     }

@@ -31,5 +31,3 @@ async function sandbox(eshop = link_montlinmart) {
 const [,, eshop] = process.argv;
 
 sandbox(eshop);
-
-
