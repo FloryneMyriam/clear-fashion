@@ -8,12 +8,12 @@ const link_montlinmart = 'https://www.montlimart.com/101-t-shirts';
 const link_circlesportswear = 'https://shop.circlesportswear.com/collections/t-shirt-femme';
 
 
-async function sandbox(eshop = link_montlinmart) {
+async function sandbox(eshop = link_dedicated) {
   try {
     console.log(`🕵️‍♀️  browsing ${eshop} eshop`);
 
-    const products = await montlimartbrand.scrape(eshop);
-
+    const products = await dedicatedbrand.scrape(eshop);
+    
     if (products.length === 0) {
       console.log('No products found');
     } else {
